@@ -47,10 +47,11 @@ function modifyButtonStyles() {
 }
 
 function configureFloatButton() {
-    const floatButtonElement = document.querySelector('[data-testid="float-button"] label');
+    const floatButtonText = document.querySelector('[data-testid="float-button"] label');
+    const floatButtonElement = document.querySelector('[data-testid="float-button"]');
 
     if (floatButtonElement) {
-        floatButtonElement.textContent = 'Comprar agora';
+        floatButtonText.textContent = 'Comprar agora';
         floatButtonElement.style.backgroundColor = '#0086FF';
     }
 }
